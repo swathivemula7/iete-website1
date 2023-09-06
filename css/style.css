@@ -633,29 +633,26 @@ p{
   background-color: #9a7be0;
 }
 
-.contact .container{
-  width: 80%;
-  margin: 50px auto;
-  
-  }
   
   .contact .contact-box{
   
   background: #fff;
   display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   border-radius: 2% 0 0 2%;
   
   }
   
   .contact .contact-left{
   
-  flex-basis: 40%;
+  flex: 1 1 40rem;
   padding: 40px 60px;
   
  
   }
   .contact .contact-right{
-  flex-basis: 60%;
+  flex: 1 1 40rem;
   padding: 40px;
   background: #c2b3e5;
   border-radius: 0 4% 2% 0;
@@ -723,7 +720,7 @@ p{
       color:#996fd6;
       font-weight: 600;
       margin-bottom: 30px;
-      text-align: center;
+      font-size: 3rem;
   }
   
   
@@ -754,7 +751,18 @@ p{
   .contact .email{
     text-transform: lowercase;
   }
-  
+   .google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
   
 
 
@@ -825,11 +833,15 @@ p{
   .college .part {
       flex-basis: 100%;
   }
-}
+  .contact .contact-left{
+    flex-basis: 100%;
+  }
 
+  .contact .contact-right{
+    flex-basis: 100%;
+  }
 
-@media (max-width: 768px){
-  .review .box-container .box{
+  .events .box-container .box{
     width: 100%;
     height: auto;
     margin: 10px 0;
